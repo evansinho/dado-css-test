@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <!-- Desktop View -->
+    <div class="modal-container-desktop">
+      <span class="close">X</span>
+      <div class="modal-title-container">
+        <h3>Configure Alerts</h3>
+        <p>Sent Alert to you and your team members when new response is added to report</p>
+      </div>
+
+      <div class="modal-input">
+        <span class="search-label">
+          <label for="text">Search/Add User</label>
+        </span>
+        <span class="search-input">
+          <input type="text" placeholder="Ex. John Doe" />
+          <button class="btn">Add</button>
+        </span>
+      </div>
+
+      <div class="modal-table">
+        <table>
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Frequency</td>
+              <td class="action">Action</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="avatar-container">
+                <span class="avatar">V.R</span>
+                <span class="user-details">
+                  <h3>Vishal Rana</h3>
+                  <p>vishal.d.rana@gmail.com</p>
+                </span>
+              </td>
+              <td class="frequency">Immediately <i class="fas fa-angle-down"></i></td>
+              <td class="action">
+                <span class="delete-icon"><i class="fas fa-trash-alt"></i></span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="avatar-container">
+                <span class="avatar">M.H</span>
+                <span class="user-details">
+                  <h3>Morris Howard</h3>
+                  <p>chad.stephens@example.com</p>
+                </span>
+              </td>
+              <td class="frequency">Weekly <i class="fas fa-angle-down"></i></td>
+              <td class="action">
+                <span class="delete-icon"><i class="fas fa-trash-alt"></i></span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="avatar-container">
+                <span class="avatar">D.H</span>
+                <span class="user-details">
+                  <h3>Dustin Howard</h3>
+                  <p>alice.hale@example.com</p>
+                </span>
+              </td>
+              <td class="frequency">Monthly <i class="fas fa-angle-down"></i></td>
+              <td class="action">
+                <span class="delete-icon"><i class="fas fa-trash-alt"></i></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <hr>
+        <div class="buttons">
+          <button class="save">Save</button>
+          <button class="cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile View -->
+    <div class="mobile-container">
+      <div class="mobile-title">
+        <h3><i class="fas fa-angle-left"></i>Configure Alerts</h3>
+      </div>
+
+      <hr>
+
+      <div class="mobile-input">
+        <input type="text" placeholder="Search/Add User" />
+      </div>
+
+      <div class="bottom-container">
+        <div class="user-container">
+          <div class="user-details">
+            <span class="mobile-avartar">V.R</span>
+            <span class="mobile-details">
+              <h3>Vishal Rana</h3>
+              <p>vishal.d.rana@gmail.com</p>
+              <h6>Immediately <i class="fas fa-angle-down"></i></h6>
+            </span>
+          </div>
+          <div class="mobile-action">
+            <span class="delete-icon"><i class="fas fa-trash-alt"></i></span>
+          </div>
+        </div>
+  
+        <div class="user-container">
+          <div class="user-details">
+            <span class="mobile-avartar">M.H</span>
+            <span class="mobile-details">
+              <h3>Morris Howard</h3>
+              <p>chad.stephens@example.com</p>
+              <h6>Immediately <i class="fas fa-angle-down"></i></h6>
+            </span>
+          </div>
+          <div class="mobile-action">
+            <span class="delete-icon"><i class="fas fa-trash-alt"></i></span>
+          </div>
+        </div>
+  
+        <div class="user-container">
+          <div class="user-details">
+            <span class="mobile-avartar">D.H</span>
+            <span class="mobile-details">
+              <h3>Dustin Howard</h3>
+              <p>alice.hale@example.com</p>
+              <h6>Immediately <i class="fas fa-angle-down"></i></h6>
+            </span>
+          </div>
+          <div class="mobile-action">
+            <span class="delete-icon"><i class="fas fa-trash-alt"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.4;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e5e5e5;
+}
+
+.mobile-container {
+  display: none;
+}
+
+.modal-container-desktop {
+  margin: 5rem auto;
+  width: 450px;
+  height: 400px;
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #6d7294;
+}
+
+.modal-title-container {
+  margin-bottom: 15px;
+}
+
+.modal-title-container h3,
+.mobile-title h3 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.modal-title-container p,
+.search-label label {
+  font-size: 10px;
+  font-weight: 400;
+  color: #6d7294;
+}
+
+.modal-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  border-color: #e3e9f2;
+}
+
+.search-input input {
+  width: 300px;
+  height: 30px;
+}
+
+.search-input button {
+  width: 130px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 25px;
+  border-color: #475ffb;
+  border-width: thin;
+  color: #475ffb;
+  font-weight: 700;
+}
+
+::placeholder {
+  padding-left: 5px;
+  color: #6d7294;
+}
+
+table {
+  padding-bottom: 10px;
+}
+
+thead td {
+  font-size: 11px;
+  font-weight: 700;
+  color: #6d7294;
+  padding: 10px;
+}
+
+tbody tr {
+  margin-top: 5px;
+}
+
+tbody td {
+  padding: 10px;
+}
+
+.avatar-container {
+  display: inline-flex;
+}
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #6d7294;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+.avatar-container .user-details {
+  padding: 5px 0 0 10px;
+}
+
+.avatar-container h3,
+.mobile-details h3 {
+  font-size: 11px;
+  font-weight: 700;
+  color: #2b2d33;
+}
+
+.avatar-container p,
+.mobile-details p {
+  font-size: 10px;
+  font-weight: 400;
+  color: #6d7294;
+}
+
+.frequency,
+.mobile-details h6 {
+  font-size: 10px;
+  color: #475ffb;
+  font-weight: 700;
+  padding-top: 5px;
+}
+
+.action {
+  padding-left: 100px;
+}
+
+.action .delete-icon,
+.mobile-action .delete-icon {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #e3e9f2;
+  color: #f02b5b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fas {
+  font-size: 10px;
+}
+
+.fa-angle-down {
+  color: #2b2d33;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid #e3e9f2;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 10px;
+}
+
+.save {
+  width: 130px;
+  height: 30px;
+  background-color: #475ffb;
+  border-radius: 25px;
+  border-color: #475ffb;
+  border-width: thin;
+  color: #fff;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.cancel {
+  width: 130px;
+  height: 30px;
+  background-color: #fff;
+  border-color: #e3e9f2;
+  border-radius: 25px;
+  border-width: thin;
+  color: #878db1;
+  font-weight: 700;
+}
+
+/* Mobile Screen */
+
+@media (max-width: 540px) {
+  .modal-container-desktop {
+    display: none;
+  }
+
+  body {
+    background-color: #f8f8f8;
+  }
+
+  .mobile-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-container hr {
+    display: block;
+    min-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .mobile-title i {
+    margin: 0 5px;
+    color: #e3e9f2;
+  }
+
+  .mobile-title {
+    margin-bottom: 10px;
+    padding: 5px 10px 0 10px;
+  }
+
+  .mobile-input {
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+
+  .mobile-input input {
+    display: block;
+    min-width: 100%;
+    height: 30px;
+  }
+
+  .bottom-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+  }
+
+  .user-container {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .user-container .user-details {
+    display: flex;
+    padding: 10px;
+  }
+
+  .mobile-avartar {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #6d7294;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .mobile-details {
+    padding: 10px;
+  }
+
+  .mobile-action {
+    padding: 20px;
+  }
+}
